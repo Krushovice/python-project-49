@@ -1,3 +1,0 @@
-[console_scripts]
-brain-games=brain_games.scripts.brain_games:main
-

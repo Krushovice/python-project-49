@@ -1,6 +1,0 @@
-#!/mnt/d/Python projects/hexlet/python-project-49/.venv/bin/python
-import sys
-from brain_games.scripts.brain_games import main
-
-if __name__ == '__main__':
-    sys.exit(main())
