@@ -12,7 +12,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-games = "brain_games.scripts.brain_games:welcome_user"
+
 
 
 [build-system]
