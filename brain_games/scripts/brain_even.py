@@ -1,5 +1,5 @@
 from random import randint
-from cli import welcome_user, name
+from .cli import welcome_user, name
 
 def parity_check():
     welcome_user()
@@ -23,7 +23,6 @@ Let's try again, {name}!''')
 
     print(f'Congratulations, {name}!')
 
-parity_check()
 
 
 def main():
