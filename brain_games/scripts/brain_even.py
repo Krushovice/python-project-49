@@ -1,5 +1,5 @@
 from random import randint
-from .cli import welcome_user, name
+from brain_games.scripts.cli import welcome_user, name
 
 def parity_check():
     welcome_user()
