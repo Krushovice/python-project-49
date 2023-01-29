@@ -15,6 +15,9 @@ brain-games = "brain_games.scripts.brain_games:main"
 
 
 
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
