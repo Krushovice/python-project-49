@@ -12,7 +12,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-
+brain-even = "brain_games.scripts.brain_even:main"
 
 
 [tool.poetry.group.dev.dependencies]
