@@ -1,10 +1,11 @@
-from random import randint, choice
-from cli import name
 import prompt
+from random import randint, choice
+from brain_games.scripts.cli import welcome_user, name
 
 
 operators = ['+', '-', '*']
-def calculate(name):
+def calculate():
+    welcome_user()
     counter = 0
 
     while counter < 3:
@@ -19,7 +20,9 @@ def calculate(name):
             else:
                 result = num1 * num2
 
-        else:
+            quest = f'{num2} {operator} {num1}'
+
+        if num1 > num2:
             if operator == '-':
                 result = num1 - num2
             elif operator == '+':
@@ -27,10 +30,8 @@ def calculate(name):
             else:
                 result = num1 * num2
 
-        if num1 > num2:
-            quest = f'{num1}{operator}{num2}'
-        else:
-            quest = f'{num2}{operator}{num1}'
+            quest = f'{num1} {operator} {num2}'
+
 
         print(f'What is the result of the expression?\nQestion: {quest}')
         correct_answer = str(result)
@@ -45,5 +46,10 @@ def calculate(name):
     print(f'Congratulations, {name}! You answered correctly 3 times, well done!')
 
 
+
+def main():
+    calculate()
+
+
 if __name__ == '__main__':
-    calculate(name)
+    main()
