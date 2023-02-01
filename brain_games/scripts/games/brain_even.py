@@ -3,7 +3,6 @@ from random import randint
 from brain_games.scripts.cli import welcome_user, name
 
 def parity_check():
-    welcome_user()
 
     counter = 0
     while counter < 3:
@@ -27,6 +26,7 @@ def parity_check():
 
 
 def main():
+    welcome_user()
     parity_check()
 
 

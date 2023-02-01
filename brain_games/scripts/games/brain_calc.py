@@ -5,7 +5,6 @@ from brain_games.scripts.cli import welcome_user, name
 
 operators = ['+', '-', '*']
 def calculate():
-    welcome_user()
     counter = 0
 
     while counter < 3:
@@ -48,6 +47,7 @@ def calculate():
 
 
 def main():
+    welcome_user()
     calculate()
 
 
