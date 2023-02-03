@@ -9,7 +9,7 @@ def parity_check():
         number = randint(1, 100)
         print('Answer "yes" if the number is even, otherwise answer "no".')
         print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
+        answer = prompt.string('Your answer: ').lower()
 
         if (number % 2 == 0 and answer == 'yes') or (number % 2 != 0 and answer == 'no'):
             print('Current!')

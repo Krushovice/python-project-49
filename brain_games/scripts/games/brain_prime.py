@@ -33,13 +33,6 @@ def prime_or_not():
 
 
 
-
-
-
-
-
-
-
 def main():
     welcome_user()
     prime_or_not()
