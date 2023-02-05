@@ -5,14 +5,14 @@ from brain_games.scripts.cli import welcome_user
 def prime_or_not():
     counter = 0
     while counter < 3:
-        number = randint(1, 99)
+        number = randint(2, 99)
 
         def check_number(number):
 
             for i in range(2, (number//2)+1):
                 if number % i == 0:
                     return False
-            return False
+            return True
         if check_number(number) == False:
             correct_answer = 'no'
         else:
@@ -37,5 +37,4 @@ def main():
 
 
 if __name__ == '__main__':
-    from brain_games.scripts.cli import name
     main()
