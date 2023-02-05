@@ -1,6 +1,6 @@
 import prompt
 from random import randint, choice
-from brain_games.scripts.cli import welcome_user
+from brain_games.scripts.cli import welcome_user, name
 
 def prime_or_not():
     counter = 0
