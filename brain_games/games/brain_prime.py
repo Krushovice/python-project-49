@@ -1,7 +1,6 @@
 import prompt
 from random import randint, choice
-from brain_games.scripts.cli import welcome_user, name
-
+from brain_games.scripts.cli import welcome_user
 
 def prime_or_not():
     counter = 0
@@ -31,12 +30,12 @@ def prime_or_not():
     print(f'Congratulations, {name}! You answered correctly 3 times, well done!')
 
 
-
-
 def main():
     welcome_user()
     prime_or_not()
 
 
+
 if __name__ == '__main__':
+    from brain_games.scripts.cli import name
     main()
