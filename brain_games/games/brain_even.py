@@ -1,13 +1,14 @@
 import prompt
 from random import randint
-from brain_games.scripts.cli import welcome_user, name
+from brain_games.scripts.cli import welcome_user
+
 
 def parity_check():
-
     counter = 0
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
     while counter < 3:
         number = randint(1, 100)
-        print('Answer "yes" if the number is even, otherwise answer "no".')
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ').lower()
 
@@ -15,17 +16,17 @@ def parity_check():
             print('Current!')
             counter += 1
 
-        elif number % 2 == 0 and answer == 'no':
+        elif (number % 2 == 0 and answer == 'no') or (number % 2 != 0 and answer == 'yes') :
             print(f'Wrong answer! Correct answer is "yes".\nBetter luck next time\nLet"s try again, {name}!')
+            counter = 0
 
-        elif number % 2 != 0 and answer == 'yes':
-            print(f'Wrong answer! Correct answer is "no".\nBetter luck next time\nLet"s try again, {name}!')
 
     print(f'Congratulations, {name}!')
 
 
 
 def main():
+
     welcome_user()
     parity_check()
 
