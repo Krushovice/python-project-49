@@ -1,6 +1,6 @@
 import prompt
 from random import randint, choice
-from brain_games.scripts.cli import welcome_user, name
+
 
 
 operators = ['+', '-', '*']

@@ -1,6 +1,6 @@
 import prompt
 from random import randint
-from brain_games.scripts.cli import welcome_user, name
+
 
 def find_divisor():
     counter = 0
