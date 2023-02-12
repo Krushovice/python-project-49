@@ -1,15 +1,13 @@
 import prompt
-from brain_progression import build_game, find_number
 
-def start_game():
+def start_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
 
     counter = 0
     while counter < 3:
-        correct_answer= build_game()
-        sequence = find_number()
+        print(question)
         user_answer = prompt.string('Your answer:  ')
         if user_answer == correct_answer:
             print('Correct!')
@@ -19,8 +17,3 @@ def start_game():
             counter = 0
 
     print(f'Congratulations, {name}! You answered correctly 3 times, well done!')
-
-
-
-if __name__ == '__main__':
-    start_game()
