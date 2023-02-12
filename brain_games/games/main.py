@@ -1,7 +1,7 @@
 import prompt
 from brain_progression import build_game, find_number
 
-def main():
+def start_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
