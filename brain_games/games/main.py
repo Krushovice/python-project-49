@@ -23,4 +23,4 @@ def start_game():
 
 
 if __name__ == '__main__':
-    main()
+    start_game()
