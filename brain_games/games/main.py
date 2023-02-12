@@ -7,7 +7,6 @@ def main():
     print(f'Hello, {name}!')
 
     counter = 0
-
     while counter < 3:
         correct_answer= build_game()
         sequence = find_number()
