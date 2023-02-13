@@ -17,4 +17,4 @@
 
 ## Instalation
 
-'pip install --user --extra-index-url https://test.pypi.org/simple/ krushovice-brain-games'
+'pip install --user --extra-index-url https://test.pypi.org/simple/ hexlet-code'
