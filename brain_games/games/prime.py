@@ -1,40 +1,24 @@
 import prompt
 from random import randint, choice
+from math import sqrt
 
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+def build_game():
+    #Находим рандомное число
+    task = randint(2, 99)
+    prime =True   # флаг изначально поднят
+    i = 2
+    while i <= sqrt(task):
+        #Запускаем проверку делителей квадрата числа, начиная с 2
+        if task % i == 0:
+            prime = False
+            break
+        i += 1
 
-def prime_or_not():
-    counter = 0
-    while counter < 3:
-        number = randint(2, 99)
+    if prime:
+    #Если флаг остался поднят, то число простое
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
-        def check_number(number):
-
-            for i in range(2, (number//2)+1):
-                if number % i == 0:
-                    return False
-            return True
-        if check_number(number) == False:
-            correct_answer = 'no'
-        else:
-            correct_answer = 'yes'
-        print(f'Question: {number}')
-        user_answer = prompt.string('Your answer: ').lower()
-
-        if user_answer == correct_answer:
-            print('Correct!')
-            counter+=1
-        else:
-            print(f'{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet"s try again, {name}')
-            counter = 0
-
-    print(f'Congratulations, {name}! You answered correctly 3 times, well done!')
-
-
-def main():
-    welcome_user()
-    prime_or_not()
-
-
-
-if __name__ == '__main__':
-    main()
+    return correct_answer, task

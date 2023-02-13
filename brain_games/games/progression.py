@@ -1,6 +1,7 @@
 import prompt
 from random import randint, choice
 
+QUESTION = 'What number is missing in the progression?'
 
 def find_number():
     #Расчитываем арифметическую последовательсть
@@ -17,8 +18,7 @@ def build_game():
     random_index = randint(0,9)
     correct_answer = str(task[random_index])
     task[random_index] = '..'
-    question = f'What number is missing in the progression?\nQestion: {task}'
-    return correct_answer, question
+    task = ' '.join(str(i) for i in task)
 
-    correct_answer = build_game()
-    question = build_game()
+
+    return correct_answer, task
