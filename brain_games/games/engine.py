@@ -21,8 +21,6 @@ def start_game(game):
             print(f'''{user_answer} is wrong answer ;(.
             \nCorrect answer was {correct_answer}
             \nLet"s try again, {name}!''')
-            counter = 0
+            break
 
-    print(f'''Congratulations, {name}!
-            You answered correctly 3 times!
-          ''')
+    print(f'Congratulations, {name}!')
