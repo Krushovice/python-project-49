@@ -18,10 +18,10 @@ def start_game(game):
             print('Correct!')
             counter += 1
         else:
-            print(f'''{user_answer} is wrong answer ;(.
+            print(f"""{user_answer} is wrong answer ;(.
 Correct answer was {correct_answer}
-Let"s try again, {name}!
-                  ''')
+Let's try again, {name}!
+                  """)
             break
 
         print(f'Congratulations, {name}!')
