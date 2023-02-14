@@ -18,3 +18,23 @@
 ## Instalation
 
 'pip install --user --extra-index-url https://test.pypi.org/simple/ hexlet-code'
+
+
+## How it works
+# brain_games
+[![asciicast](https://asciinema.org/a/3ge3JzY8vncjip4pjg9u2MrAe.svg)](https://asciinema.org/a/3ge3JzY8vncjip4pjg9u2MrAe)
+
+# calc
+[![asciicast](https://asciinema.org/a/RhEOwpgTGe7AaBaS5qgLptKk3.svg)](https://asciinema.org/a/RhEOwpgTGe7AaBaS5qgLptKk3)
+
+# even
+[![asciicast](https://asciinema.org/a/aZy2DMbYb7Dzm52QYCKBSAqlf.svg)](https://asciinema.org/a/aZy2DMbYb7Dzm52QYCKBSAqlf)
+
+# gcd
+[![asciicast](https://asciinema.org/a/rBVz1kjXjHMHYBdkw0eDq3Ewx.svg)](https://asciinema.org/a/rBVz1kjXjHMHYBdkw0eDq3Ewx)
+
+# prime
+[![asciicast](https://asciinema.org/a/wlHHTaiyWpLZXgvCIBej8UtKy.svg)](https://asciinema.org/a/wlHHTaiyWpLZXgvCIBej8UtKy)
+
+# progression
+[![asciicast](https://asciinema.org/a/DjgMyjYNAk4Iwj2ORUjGudros.svg)](https://asciinema.org/a/DjgMyjYNAk4Iwj2ORUjGudros)
