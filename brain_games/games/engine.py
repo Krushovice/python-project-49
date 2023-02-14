@@ -11,7 +11,7 @@ def start_game(game):
     while counter < 3:
         # Выводим вопрос игры и задаем счетчик для прохода по циклу
         correct_answer, task = game.build_game()
-        print(f'Qestion: {task}')
+        print(f'Question: {task}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
             # Проверяем ответ пользователя
