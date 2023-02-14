@@ -8,13 +8,13 @@ def start_game(game):
     print(f'Hello, {name}!')
     print(game.QUESTION)
     counter = 0
+    is_won = True
     while counter < 3:
         # Выводим вопрос игры и задаем счетчик для прохода по циклу
         correct_answer, task = game.build_game()
         print(f'Question: {task}')
         user_answer = prompt.string('Your answer: ')
 
-        is_won = True
         if user_answer == correct_answer:
             # Проверяем ответ пользователя
             print('Correct!')
