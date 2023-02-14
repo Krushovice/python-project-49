@@ -1,10 +1,11 @@
-import prompt
 from random import randint
+
 
 QUESTION = 'Find the greatest common divisor of given numbers.'
 
+
 def build_game():
-    #Задаем 2 числа и находим их делители
+    # Задаем 2 числа и находим их делители
     num1, num2 = randint(1, 100), randint(1, 100)
     first_divisors = []
     second_divisors = []
@@ -12,7 +13,7 @@ def build_game():
     while i < num1:
         if num1 % i == 0:
             first_divisors.append(i)
-            i+=1
+            i += 1
 
         x = 1
         while x < num2:

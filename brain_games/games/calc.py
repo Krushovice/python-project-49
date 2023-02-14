@@ -1,7 +1,8 @@
-import prompt
 from random import randint, choice
 
 QUESTION = 'What is the result of the expression?'
+
+
 def build_game():
     '''Задаем операторы по умолчанию,находим
        2 числа и выбираем случайный оператор из списка
@@ -32,4 +33,5 @@ def build_game():
         task = f'{num1} {operator} {num2}'
 
     correct_answer = str(result)
+
     return correct_answer, task
