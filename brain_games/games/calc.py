@@ -17,8 +17,8 @@ def build_game():
 
     correct_answer = abs(OPERATION(num1, num2))
     if num1 > num2:
-        task = f'{num1} {OPERATION} {num2}'
+        task = f'{num1} {SYMBOL} {num2}'
     elif num2 > num1:
-        task = f'{num2} {OPERATION} {num1}'
+        task = f'{num2} {SYMBOL} {num1}'
 
     return correct_answer, task
