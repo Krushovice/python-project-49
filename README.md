@@ -21,20 +21,20 @@
 
 
 ## How it works
-# brain_games
+## brain_games
 [![asciicast](https://asciinema.org/a/3ge3JzY8vncjip4pjg9u2MrAe.svg)](https://asciinema.org/a/3ge3JzY8vncjip4pjg9u2MrAe)
 
-# calc
+## calc
 [![asciicast](https://asciinema.org/a/RhEOwpgTGe7AaBaS5qgLptKk3.svg)](https://asciinema.org/a/RhEOwpgTGe7AaBaS5qgLptKk3)
 
-# even
+## even
 [![asciicast](https://asciinema.org/a/aZy2DMbYb7Dzm52QYCKBSAqlf.svg)](https://asciinema.org/a/aZy2DMbYb7Dzm52QYCKBSAqlf)
 
-# gcd
+## gcd
 [![asciicast](https://asciinema.org/a/rBVz1kjXjHMHYBdkw0eDq3Ewx.svg)](https://asciinema.org/a/rBVz1kjXjHMHYBdkw0eDq3Ewx)
 
-# prime
+## prime
 [![asciicast](https://asciinema.org/a/wlHHTaiyWpLZXgvCIBej8UtKy.svg)](https://asciinema.org/a/wlHHTaiyWpLZXgvCIBej8UtKy)
 
-# progression
+## progression
 [![asciicast](https://asciinema.org/a/DjgMyjYNAk4Iwj2ORUjGudros.svg)](https://asciinema.org/a/DjgMyjYNAk4Iwj2ORUjGudros)
