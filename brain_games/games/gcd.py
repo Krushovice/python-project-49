@@ -13,17 +13,17 @@ def build_game():
     while i < num1:
         if num1 % i == 0:
             first_divisors.append(i)
-            i += 1
+        i += 1
 
-        x = 1
-        while x < num2:
-            if num2 % x == 0:
-                second_divisors.append(x)
-            x += 1
+    x = 1
+    while x < num2:
+        if num2 % x == 0:
+            second_divisors.append(x)
+        x += 1
 
-        result = [x for x in first_divisors if x in second_divisors]
-        correct_answer = str(max(result))
+    result = [x for x in first_divisors if x in second_divisors]
+    correct_answer = str(max(result))
 
-        task = f'{num1} {num2}'
+    task = f'{num1} {num2}'
 
-        return correct_answer, task
+    return correct_answer, task
