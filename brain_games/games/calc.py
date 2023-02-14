@@ -15,7 +15,7 @@ def build_game():
 
     num1, num2 = randint(1, 100), randint(1, 100)
 
-    correct_answer = abs(OPERATION(num1, num2))
+    correct_answer = str(abs(OPERATION(num1, num2)))
     if num1 > num2:
         task = f'{num1} {SYMBOL} {num2}'
     elif num2 > num1:
