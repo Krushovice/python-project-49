@@ -2,11 +2,10 @@ from random import randint
 from math import sqrt
 
 
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def build_game():
-    # Находим рандомное число
     task = randint(2, 99)
     # флаг изначально поднят
     prime = True

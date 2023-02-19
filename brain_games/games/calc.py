@@ -1,24 +1,24 @@
-from random import randint, choice
 from operator import add, sub, mul
+from random import randint, choice
 
-QUESTION = 'What is the result of the expression?'
+
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def build_game():
-    '''Задаем операторы по умолчанию,находим
-       2 числа и выбираем случайный оператор из списка
-    '''
-    SYMBOL, OPERATION = choice((
-        ('+', add),
-        ('-', sub),
-        ('*', mul),))
 
-    num1, num2 = randint(1, 100), randint(1, 100)
+    OPERATORS = {
+        '+': add,
+        '-': sub,
+        '*': mul
+    }
 
-    correct_answer = str(abs(OPERATION(num1, num2)))
-    if num1 > num2:
-        task = f'{num1} {SYMBOL} {num2}'
-    elif num2 > num1:
-        task = f'{num2} {SYMBOL} {num1}'
+    FIRST_NUMBER, SECORD_NUMBER = randint(1, 50), randint(1, 50)
+    operator = choice(list(OPERATORS.keys()))
+    correct_answer = str(abs(OPERATORS[operator](FIRST_NUMBER, SECORD_NUMBER)))
+    if FIRST_NUMBER > SECORD_NUMBER:
+        task = f'{FIRST_NUMBER} {operator} {SECORD_NUMBER}'
+    elif SECORD_NUMBER > FIRST_NUMBER:
+        task = f'{SECORD_NUMBER} {operator} {FIRST_NUMBER}'
 
     return correct_answer, task
