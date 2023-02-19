@@ -5,7 +5,7 @@
 
 <a href="https://codeclimate.com/github/Krushovice/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/b03106cd5249ab4c3dba/maintainability" /></a>
 
-[![linter status](https://github.com/Krushovice/python-project-49/workflows/Actions)]
+[![linter status](https://github.com/Krushovice/python-project-49/workflows/pyci/badge.svg)](https://github.com/Krushovice/python-project-49/actions/workflows/pyci.yml)
 
 
 ## The package contains five simple mathematics quiz games:
