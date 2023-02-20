@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Brain games project for hexlet"
-authors = ["krushovice <kickstar69@yandex,ru>"]
+authors = ["krushovice <kickstar69@yandex.ru>"]
 readme = "README.md"
 repository = "https://github.com/Krushovice/python-project-49"
 packages = [{include = "brain_games"}]
@@ -14,6 +14,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
+flake8 = "^6.0.0"
 
 
 [tool.poetry.scripts]
