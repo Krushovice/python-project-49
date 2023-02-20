@@ -13,6 +13,12 @@ build:
 publish:
 	poetry publish --dry-run
 
+test:
+	poetry run pytest
+
+test-coverage:
+	poetry run pytest --cov=brain_games/ --cov-report xml
+
 package-install:
 	python3 -m pip install --user dist/*.whl
 
