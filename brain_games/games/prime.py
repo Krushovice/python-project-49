@@ -7,21 +7,13 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def make_question():
     task = randint(2, 99)
+    i = 2
+    while i <= sqrt(task):
 
-    def is_prime(build_game):
-        prime = True
-        i = 2
-        while i <= sqrt(task):
-
-            if task % i == 0:
-                prime = False
-                break
-            i += 1
-
-        if prime:
-            correct_answer = 'yes'
-        else:
+        if task % i == 0:
             correct_answer = 'no'
-        return correct_answer, task
+            return
 
-    return is_prime(make_question)
+        i += 1
+    correct_answer = 'yes'
+    return task, correct_answer

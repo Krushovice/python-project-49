@@ -13,12 +13,12 @@ def make_question():
         '*': mul
     }
 
-    FIRST_NUMBER, SECORD_NUMBER = randint(1, 50), randint(1, 50)
+    first_number, second_number = randint(1, 50), randint(1, 50)
     operator = choice(list(OPERATORS.keys()))
-    correct_answer = str(abs(OPERATORS[operator](FIRST_NUMBER, SECORD_NUMBER)))
-    if FIRST_NUMBER > SECORD_NUMBER:
-        task = f'{FIRST_NUMBER} {operator} {SECORD_NUMBER}'
-    elif SECORD_NUMBER > FIRST_NUMBER:
-        task = f'{SECORD_NUMBER} {operator} {FIRST_NUMBER}'
+    correct_answer = str(abs(OPERATORS[operator](first_number, second_number)))
+    if first_number > second_number:
+        task = f'{first_number} {operator} {second_number}'
+    elif second_number > first_number:
+        task = f'{second_number} {operator} {first_number}'
 
     return correct_answer, task

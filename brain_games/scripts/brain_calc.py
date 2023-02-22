@@ -1,9 +1,10 @@
-from brain_games.engine import initialize
+#!/usr/bin/env python3
+from brain_games.engine import manage_project
 from brain_games.games import calc
 
 
 def main():
-    initialize(calc)
+    manage_project(calc)
 
 
 if __name__ == '__main__':
