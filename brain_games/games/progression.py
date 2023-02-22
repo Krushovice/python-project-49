@@ -17,7 +17,7 @@ def make_progression():
     return task, correct_answer, random_index
 
 
-def build_game():
+def make_question():
     # Основная функция задачи
     task, correct_answer, random_index = make_progression()
     task[random_index] = '..'

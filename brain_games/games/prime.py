@@ -5,7 +5,7 @@ from math import sqrt
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def build_game():
+def make_question():
     task = randint(2, 99)
 
     def is_prime(build_game):
@@ -24,4 +24,4 @@ def build_game():
             correct_answer = 'no'
         return correct_answer, task
 
-    return is_prime(build_game)
+    return is_prime(make_question)

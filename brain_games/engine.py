@@ -10,7 +10,7 @@ def initialize(game):
     COUNTER = 0
 
     while COUNTER < 3:
-        correct_answer, task = game.build_game()
+        correct_answer, task = game.make_question()
         print(f'Question: {task}')
         user_answer = prompt.string('Your answer: ')
 

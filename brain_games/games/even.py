@@ -4,10 +4,10 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def build_game():
+def make_question():
     task = randint(1, 100)
 
-    def is_prime(build_game):
+    def is_even(build_game):
         if task % 2 == 0:
             correct_answer = 'yes'
 
@@ -16,4 +16,4 @@ def build_game():
 
         return correct_answer, task
 
-    return is_prime(build_game)
+    return is_even(make_question)

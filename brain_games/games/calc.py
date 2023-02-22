@@ -5,7 +5,7 @@ from random import randint, choice
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def build_game():
+def make_question():
 
     OPERATORS = {
         '+': add,
