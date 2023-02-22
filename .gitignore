@@ -4,3 +4,4 @@ dist/
 __pycache__
 coverage.xml
 .pytest_cashe
+.coverage
