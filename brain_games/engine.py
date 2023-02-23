@@ -1,10 +1,16 @@
 import prompt
-from cli import welcome_user
+
+
+def greet():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
 
 
 def manage_project(game):
 
-    name = welcome_user()
+    name = greet()
     print(game.DESCRIPTION)
     COUNTER = 0
 
