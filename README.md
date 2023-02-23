@@ -6,7 +6,6 @@
 
 <!-- ![Code-Coverage](https://img.shields.io/codeclimate/coverage/Krushovice/python-project-49?style=for-the-badge) -->
 
-
 ## The package contains five simple mathematics quiz games:
 
 * Even check brain-even
