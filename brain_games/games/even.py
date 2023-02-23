@@ -6,9 +6,12 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def make_question():
     task = randint(1, 100)
-    correct_answer = is_even(task)
+    flag = is_even(task)
+    if flag is True:
+        correct_answer = 'yes'
+    correct_answer = 'no'
     return correct_answer, task
 
 
 def is_even(task):
-    return 'no' if task % 2 else 'yes'
+    return True if task % 2 else False

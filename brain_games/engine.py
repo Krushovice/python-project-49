@@ -8,7 +8,7 @@ def greet():
     return name
 
 
-def manage_project(game):
+def core(game):
     name = greet()
     print(game.DESCRIPTION)
     COUNTER = 0

@@ -3,15 +3,14 @@ from random import randint, choice
 
 
 DESCRIPTION = 'What is the result of the expression?'
+OPERATORS = {
+    '+': add,
+    '-': sub,
+    '*': mul
+}
 
 
 def make_question():
-
-    OPERATORS = {
-        '+': add,
-        '-': sub,
-        '*': mul
-    }
 
     first_number, second_number = randint(1, 50), randint(1, 50)
     operator = choice(list(OPERATORS.keys()))

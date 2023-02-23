@@ -7,7 +7,10 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def make_question():
     task = randint(2, 99)
-    correct_answer = is_prime(task)
+    flag = is_prime(task)
+    if flag is True:
+        correct_answer = 'yes'
+    correct_answer = 'no'
     return correct_answer, task
 
 
@@ -15,6 +18,6 @@ def is_prime(task):
     i = 2
     while i <= sqrt(task):
         if task % i == 0:
-            return 'no'
+            return False
         i += 1
-    return 'yes'
+    return True
