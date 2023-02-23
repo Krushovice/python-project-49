@@ -15,7 +15,7 @@ classifiers = [
 python = "^3.10"
 prompt = "^0.4.1"
 pip = "^23.0.1"
-flake8 = "^6.0.0"
+flake8 = "^5.0.0"
 
 
 
@@ -28,7 +28,7 @@ brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^6.0.0"
+flake8 = "^5.0.0"
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
 
