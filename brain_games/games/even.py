@@ -15,4 +15,4 @@ def make_question():
 
 
 def is_even(task):
-    return True if task % 2 else False
+    return True if task % 2 == 0 else False
