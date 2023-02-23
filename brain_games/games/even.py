@@ -7,7 +7,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 def make_question():
     task = randint(1, 100)
     correct_answer = is_even(task)
-    return task, correct_answer
+    return correct_answer, task
 
 
 def is_even(task):
