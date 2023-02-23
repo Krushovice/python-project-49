@@ -9,7 +9,6 @@ def greet():
 
 
 def manage_project(game):
-
     name = greet()
     print(game.DESCRIPTION)
     COUNTER = 0
