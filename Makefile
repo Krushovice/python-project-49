@@ -14,7 +14,7 @@ run:
 	poetry run brain-games
 
 package-reinstall:
-	pip install  --force-reinstall dist/*.whl
+	pip install --force-reinstall dist/*.whl
 
 lint:
 	poetry run flake8 brain_games
