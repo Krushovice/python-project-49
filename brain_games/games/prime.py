@@ -10,7 +10,8 @@ def make_question():
     flag = is_prime(task)
     if flag is True:
         correct_answer = 'yes'
-    correct_answer = 'no'
+    else:
+        correct_answer = 'no'
     return correct_answer, task
 
 
